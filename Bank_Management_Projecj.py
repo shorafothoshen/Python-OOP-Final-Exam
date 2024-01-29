@@ -293,7 +293,7 @@ class Admin(Bank_Management):
             print("\n\tYou are Log Out now!!")
 
                     #Bank name, bank code ,bank password
-admin=Admin("Islami Bank Bangladesh Ltd","admin","admin")
+admin=Admin("Islami Bank Bangladesh Ltd","admin","1234")
 print(admin)
 current_account=None
 while(True):
@@ -304,7 +304,7 @@ while(True):
     if num=="1":
         bank_Code=input("\n\tBank Code(admin): ")
         if admin.logIn_bankCode(bank_Code):
-            bank_password=input("\n\tPassword(admin): ")
+            bank_password=input("\n\tPassword(1234): ")
             if admin.LogIn_Password(bank_password):
                 while admin.Loged_in:
                     print("\n\t1.Create User Account")
